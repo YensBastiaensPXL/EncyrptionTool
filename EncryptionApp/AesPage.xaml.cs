@@ -3,6 +3,7 @@ using Microsoft.Win32;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.IO;
+using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -120,29 +121,26 @@ namespace EncryptionApp
         {
             try
             {
-                if (CheckEncryptionInputs())
-                {
-                    byte[] key = LoadKey(selectedAESKeyName);
-                    byte[] iv = LoadIV(selectedAESKeyName);
+                if (string.IsNullOrEmpty(selectedAESKeyName)) throw new Exception("Geen AES sleutel geselecteerd!");
+                if (string.IsNullOrEmpty(selectedFileToEncrypt)) throw new Exception("Geen bestand geselecteerd!");
+                if (string.IsNullOrWhiteSpace(EncryptOutputFilename.Text)) throw new Exception("Geen output naam opgegeven!");
 
-                    // ➔ Controleer direct de lengte van de IV:
-                    if (iv.Length != 16)
-                    {
-                        MessageBox.Show($"IV lengte fout: {iv.Length} bytes! AES vereist exact 16 bytes.", "Fout");
-                        return;
-                    }
+                byte[] key = LoadKey(selectedAESKeyName);
+                byte[] iv = LoadIV(selectedAESKeyName);
+                string outputPath = Path.Combine(ciphertextFolderPath, EncryptOutputFilename.Text.Trim());
 
-                    string outputFile = Path.Combine(ciphertextFolderPath, EncryptOutputFilename.Text.Trim());
+                AesEncryption.EncryptFileToBase64(selectedFileToEncrypt, outputPath, key, iv);
 
-                    AesEncryption.EncryptFileToBase64(selectedFileToEncrypt, outputFile, key, iv);
-
-                    MessageBox.Show("Encryptie voltooid!", "Succes");
-                    LoadCiphertextFiles_Click(sender, e);
-                }
+                MessageBox.Show("Encryptie voltooid!", "Succes");
+                LoadCiphertextFiles_Click(sender, e);
+            }
+            catch (CryptographicException cx)
+            {
+                MessageBox.Show($"Cryptografische fout: {cx.Message}\nMogelijk verkeerde sleutel!", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij encryptie: {ex.Message}", "Fout");
+                MessageBox.Show($"Fout bij encryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -182,9 +180,13 @@ namespace EncryptionApp
                     MessageBox.Show("Decryptie voltooid!", "Succes");
                 }
             }
+            catch (CryptographicException cx)
+            {
+                MessageBox.Show($"Cryptografische fout: {cx.Message}\nMogelijk verkeerde sleutel!", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij decryptie: {ex.Message}", "Fout");
+                MessageBox.Show($"Fout bij decryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

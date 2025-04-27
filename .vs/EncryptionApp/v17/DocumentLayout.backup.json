@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\rsapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\rsapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionlibrary\\rsaencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|solutionrelative:encryptionlibrary\\rsaencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\rsapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\rsapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionlibrary\\aesencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|solutionrelative:encryptionlibrary\\aesencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\aespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\aespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +13,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionlibrary\\aesencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|solutionrelative:encryptionlibrary\\aesencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\rsapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\rsapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionlibrary\\rsaencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17309899-3A49-479D-ADE8-BBDFA5769073}|EncryptionLibrary\\EncryptionLibrary.csproj|solutionrelative:encryptionlibrary\\rsaencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|c:\\users\\11802975\\onedrive - pxl\\pro2\\security \u0026 privacy\\encryptionapp\\encryptionapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A185603-DE80-4286-BED4-25A92ACFCC42}|EncryptionApp\\EncryptionApp.csproj|solutionrelative:encryptionapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,11 +98,11 @@
         },
         {
           "DockedWidth": 88,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "RsaEncryption.cs",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionLibrary\\RsaEncryption.cs",
               "RelativeDocumentMoniker": "EncryptionLibrary\\RsaEncryption.cs",
@@ -119,27 +115,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "RsaPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\RsaPage.xaml.cs",
               "RelativeDocumentMoniker": "EncryptionApp\\RsaPage.xaml.cs",
               "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\RsaPage.xaml.cs",
               "RelativeToolTip": "EncryptionApp\\RsaPage.xaml.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAiwGsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T20:27:49.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RsaPage.xaml",
-              "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\RsaPage.xaml",
-              "RelativeDocumentMoniker": "EncryptionApp\\RsaPage.xaml",
-              "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\RsaPage.xaml",
-              "RelativeToolTip": "EncryptionApp\\RsaPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-27T20:26:58.331Z",
               "EditorCaption": ""
             },
             {
@@ -150,14 +134,14 @@
               "RelativeDocumentMoniker": "EncryptionLibrary\\AesEncryption.cs",
               "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionLibrary\\AesEncryption.cs",
               "RelativeToolTip": "EncryptionLibrary\\AesEncryption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAADwv0cAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T20:13:43.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "EncryptionApp\\MainWindow.xaml",
@@ -169,19 +153,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AesPage.xaml",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\AesPage.xaml",
               "RelativeDocumentMoniker": "EncryptionApp\\AesPage.xaml",
-              "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\AesPage.xaml",
-              "RelativeToolTip": "EncryptionApp\\AesPage.xaml",
+              "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\AesPage.xaml*",
+              "RelativeToolTip": "EncryptionApp\\AesPage.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-27T19:30:47.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "EncryptionApp\\MainWindow.xaml.cs",
@@ -194,13 +178,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AesPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\AesPage.xaml.cs",
               "RelativeDocumentMoniker": "EncryptionApp\\AesPage.xaml.cs",
               "ToolTip": "C:\\Users\\11802975\\OneDrive - PXL\\PRO2\\Security \u0026 Privacy\\EncryptionApp\\EncryptionApp\\AesPage.xaml.cs",
               "RelativeToolTip": "EncryptionApp\\AesPage.xaml.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAUwIMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T19:34:27.033Z",
               "EditorCaption": ""
