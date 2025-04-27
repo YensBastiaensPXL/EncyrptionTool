@@ -1,6 +1,7 @@
 ﻿using EncryptionLibrary;
 using System;
 using System.IO;
+using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -107,9 +108,13 @@ namespace EncryptionApp
                     LoadCiphertextFiles();
                 }
             }
+            catch (CryptographicException cx)
+            {
+                MessageBox.Show($"Cryptografische fout tijdens encryptie: {cx.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij encryptie: {ex.Message}");
+                MessageBox.Show($"Fout bij encryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -140,9 +145,13 @@ namespace EncryptionApp
                     LoadCiphertextFiles();
                 }
             }
+            catch (CryptographicException cx)
+            {
+                MessageBox.Show($"Cryptografische fout tijdens decryptie: {cx.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij decryptie: {ex.Message}");
+                MessageBox.Show($"Fout bij decryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
