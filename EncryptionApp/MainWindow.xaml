@@ -9,15 +9,11 @@
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel Margin="10">
 
-                        <!-- Standaard sleutelmap -->
                         <TextBlock Text="🔑 Sleutelmap instellen" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Button Click="SetKeyFolder_Click" Content="📂 Kies sleutelmap" Width="200" Height="35" Background="#3498DB" Foreground="White" Margin="0,5,0,10"/>
+                        <Button Click="SetKeyFolder_Click" Content="📂 Kies sleutelmap" HorizontalAlignment="Left" Width="200" Height="35" Background="#3498DB" Foreground="White" Margin="0,5,0,10"/>
 
-                       
-
-                        <!-- Sleutels genereren -->
                         <TextBlock Text="Sleutels genereren" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <TextBox Name="KeyNameInput" Width="250" Height="30" Margin="0,5,0,5" Text="Voer sleutelnaam in..." />
+                        <TextBox Name="KeyNameInput" Width="250" HorizontalAlignment="Left" Height="30" Margin="0,5,0,10" Text="Voer sleutelnaam in..." />
                         <StackPanel Orientation="Horizontal">
                             <Button Name="GenerateAESKey" Content="✨ Genereer AES Sleutel" Width="200" Height="35" Background="#E67E22" Foreground="White" Click="GenerateAESKey_Click"/>
                             <Button Name="GenerateRSAKeyPair" Content="🔑 Genereer RSA Sleutels" Width="200" Height="35" Background="#9B59B6" Foreground="White" Margin="10,0,0,0" Click="GenerateRSAKeyPair_Click"/>
@@ -26,11 +22,11 @@
                 </ScrollViewer>
             </TabItem>
 
-            <TabItem Header="🗂️ AES">
+            <TabItem Header="AES">
                 <Frame Name="AesFrame" NavigationUIVisibility="Hidden" />
             </TabItem>
 
-            <TabItem Header="RSA Tools">
+            <TabItem Header="RSA">
                 <Frame Name="RsaFrame" NavigationUIVisibility="Hidden" />
             </TabItem>
 

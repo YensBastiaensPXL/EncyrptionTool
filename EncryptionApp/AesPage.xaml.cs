@@ -214,18 +214,7 @@ namespace EncryptionApp
             }
         }
 
-        private void SelectCiphertextFile_Click(object sender, RoutedEventArgs e)
-        {
-            if (CiphertextListBox.SelectedItem == null)
-            {
-                MessageBox.Show("Selecteer een ciphertext-bestand!", "Fout");
-                return;
-            }
 
-            selectedFileToDecrypt = Path.Combine(ciphertextFolderPath, CiphertextListBox.SelectedItem.ToString());
-            SelectedDecryptFileLabel.Text = $"📝 Geselecteerd bestand: {CiphertextListBox.SelectedItem}";
-            DecryptOutputFilename.Text = $"{Path.GetFileNameWithoutExtension(selectedFileToDecrypt)}_decrypted.png";
-        }
 
         private byte[] LoadKey(string keyName)
         {
