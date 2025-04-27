@@ -1,7 +1,6 @@
 ﻿using EncryptionLibrary;
 using System;
 using System.IO;
-using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -13,7 +12,7 @@ namespace EncryptionApp
 {
     public partial class RsaPage : Page
     {
-        private readonly RsaEncryption rsaKeyManager;
+        private readonly RsaEncryption rsaManager;
         private string selectedPublicKeyPath;
         private string selectedPrivateKeyPath;
         private string selectedPlaintextAESKeyPath;
@@ -23,15 +22,14 @@ namespace EncryptionApp
         public RsaPage()
         {
             InitializeComponent();
-
-            rsaKeyManager = new RsaEncryption(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EncryptionKeys"));
-            LoadPublicAndPrivateKeys();
+            rsaManager = new RsaEncryption(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EncryptionKeys"));
+            LoadKeys();
         }
 
-        private void LoadPublicAndPrivateKeys()
+        private void LoadKeys()
         {
-            PublicKeyListBox.ItemsSource = rsaKeyManager.GetPublicKeys();
-            PrivateKeyListBox.ItemsSource = rsaKeyManager.GetPrivateKeys();
+            PublicKeyListBox.ItemsSource = rsaManager.GetPublicKeys();
+            PrivateKeyListBox.ItemsSource = rsaManager.GetPrivateKeys();
         }
 
         private void PublicKeyListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -46,6 +44,19 @@ namespace EncryptionApp
                 selectedPrivateKeyPath = PrivateKeyListBox.SelectedItem.ToString();
         }
 
+        private void SetCiphertextFolder_Click(object sender, RoutedEventArgs e)
+        {
+            using (var dialog = new FolderBrowserDialog())
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    ciphertextFolderPath = dialog.SelectedPath;
+                    MessageBox.Show($"Ciphertext folder ingesteld: {ciphertextFolderPath}");
+                    LoadCiphertextFiles();
+                }
+            }
+        }
+
         private void SelectPlaintextAESKey_Click(object sender, RoutedEventArgs e)
         {
             selectedPlaintextAESKeyPath = SelectFile("Text Files (*.txt)|*.txt");
@@ -55,15 +66,14 @@ namespace EncryptionApp
         {
             if (string.IsNullOrEmpty(ciphertextFolderPath))
             {
-                MessageBox.Show("Stel eerst de standaard ciphertext-folder in.", "Fout", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Stel eerst de ciphertext folder in.", "Fout");
                 return;
             }
 
             var dialog = new OpenFileDialog
             {
                 InitialDirectory = ciphertextFolderPath,
-                Filter = "Text- en XML-bestanden (*.txt;*.xml)|*.txt;*.xml"
-
+                Filter = "Text Files (*.txt)|*.txt"
             };
 
             if (dialog.ShowDialog() == true)
@@ -76,7 +86,7 @@ namespace EncryptionApp
             {
                 if (string.IsNullOrEmpty(selectedPublicKeyPath) || string.IsNullOrEmpty(selectedPlaintextAESKeyPath) || string.IsNullOrEmpty(ciphertextFolderPath))
                 {
-                    MessageBox.Show("Selecteer eerst een public key, een plaintext AES key en stel een ciphertext-folder in.", "Fout", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Selecteer public key, AES plaintext bestand en ciphertext folder.");
                     return;
                 }
 
@@ -85,7 +95,7 @@ namespace EncryptionApp
 
                 var saveDialog = new SaveFileDialog
                 {
-                    Title = "Kies waar je de versleutelde AES sleutel wilt opslaan",
+                    Title = "Opslaan versleutelde AES sleutel",
                     Filter = "Text Files (*.txt)|*.txt",
                     InitialDirectory = ciphertextFolderPath
                 };
@@ -93,17 +103,13 @@ namespace EncryptionApp
                 if (saveDialog.ShowDialog() == true)
                 {
                     AesKeyManager.SaveEncryptedKey(encryptedKey, saveDialog.FileName);
-                    MessageBox.Show("AES sleutel succesvol geëncrypt en opgeslagen.", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("AES sleutel succesvol versleuteld en opgeslagen!");
                     LoadCiphertextFiles();
                 }
             }
-            catch (CryptographicException)
-            {
-                MessageBox.Show("Cryptografische fout: verkeerde public key gebruikt bij encryptie.", "Encryptie Fout", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij encryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Fout bij encryptie: {ex.Message}");
             }
         }
 
@@ -111,9 +117,9 @@ namespace EncryptionApp
         {
             try
             {
-                if (string.IsNullOrEmpty(selectedPrivateKeyPath) || string.IsNullOrEmpty(selectedCiphertextAESKeyPath) || string.IsNullOrEmpty(ciphertextFolderPath))
+                if (string.IsNullOrEmpty(selectedPrivateKeyPath) || string.IsNullOrEmpty(selectedCiphertextAESKeyPath))
                 {
-                    MessageBox.Show("Selecteer eerst een private key, een ciphertext AES key en stel een ciphertext-folder in.", "Fout", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Selecteer private key en ciphertext bestand.");
                     return;
                 }
 
@@ -122,7 +128,7 @@ namespace EncryptionApp
 
                 var saveDialog = new SaveFileDialog
                 {
-                    Title = "Kies waar je de gedecrypteerde AES sleutel wilt opslaan",
+                    Title = "Opslaan gedecrypteerde AES sleutel",
                     Filter = "Text Files (*.txt)|*.txt",
                     InitialDirectory = ciphertextFolderPath
                 };
@@ -130,47 +136,20 @@ namespace EncryptionApp
                 if (saveDialog.ShowDialog() == true)
                 {
                     AesKeyManager.SaveDecryptedKey(decryptedKey, saveDialog.FileName);
-                    MessageBox.Show("AES sleutel succesvol gedecrypt en opgeslagen.", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("AES sleutel succesvol gedecrypt en opgeslagen!");
                     LoadCiphertextFiles();
                 }
             }
-            catch (CryptographicException)
-            {
-                MessageBox.Show("Cryptografische fout: verkeerde private key gebruikt bij decryptie.", "Decryptie Fout", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fout bij decryptie: {ex.Message}", "Fout", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Fout bij decryptie: {ex.Message}");
             }
-        }
-
-        private void SetCiphertextFolder_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                ciphertextFolderPath = dialog.SelectedPath;
-                MessageBox.Show($"Standaard ciphertext-folder ingesteld:\n{ciphertextFolderPath}", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                LoadCiphertextFiles();
-            }
-        }
-
-        private void LoadCiphertextFiles_Click(object sender, RoutedEventArgs e)
-        {
-            LoadCiphertextFiles();
         }
 
         private void LoadCiphertextFiles()
         {
-            if (string.IsNullOrEmpty(ciphertextFolderPath))
-            {
-                CiphertextListBox.ItemsSource = null;
-                return;
-            }
-
-            string[] files = CiphertextManager.LoadCiphertextFiles(ciphertextFolderPath);
-            CiphertextListBox.ItemsSource = files;
+            if (string.IsNullOrEmpty(ciphertextFolderPath)) return;
+            CiphertextListBox.ItemsSource = CiphertextManager.LoadCiphertextFiles(ciphertextFolderPath);
         }
 
         private string SelectFile(string filter)

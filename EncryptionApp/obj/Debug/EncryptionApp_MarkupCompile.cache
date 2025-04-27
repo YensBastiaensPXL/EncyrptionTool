@@ -4,26 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\
 EncryptionApp
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\App.xaml
-21604115934
+31425706472
 
-6-1526261804
+7-1197299198
 17-2034239621
-MainWindow.xaml;RsaPage.xaml;
-=======
-C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\App.xaml
-1219584333
-
-51579654133
-151653607974
-MainWindow.xaml;
->>>>>>> 216897ceb3a6929012377fcef0131f8e22f23539
+AesPage.xaml;MainWindow.xaml;RsaPage.xaml;
 
 False
 

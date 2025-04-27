@@ -43,3 +43,5 @@ C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\Encrypti.2
 C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.exe
 C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.pdb
 >>>>>>> 216897ceb3a6929012377fcef0131f8e22f23539
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\AesPage.baml
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\AesPage.g.cs
