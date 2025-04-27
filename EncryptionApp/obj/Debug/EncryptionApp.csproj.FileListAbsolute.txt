@@ -17,3 +17,7 @@ C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\Encryptio
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\Encrypti.2055E9A8.Up2Date
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\EncryptionApp.exe
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\EncryptionApp.pdb
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\bin\Debug\EncryptionLibrary.dll
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\bin\Debug\EncryptionLibrary.pdb
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\RsaPage.baml
+C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\RsaPage.g.cs

@@ -18,6 +18,7 @@ namespace EncryptionApp
         {
             InitializeComponent();
             LoadDefaultKeyFolder();
+            RsaFrame.Navigate(new RsaPage());
         }
 
 

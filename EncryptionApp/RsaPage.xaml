@@ -1,0 +1,44 @@
+﻿<Page x:Class="EncryptionApp.RsaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="RSA Tools">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20" Orientation="Vertical" VerticalAlignment="Top">
+
+            <!-- Public/Private Key selectie -->
+            <TextBlock FontWeight="Bold" FontSize="18" Text="🔑 Beschikbare Public Keys" />
+            <ListBox Name="PublicKeyListBox" SelectionChanged="PublicKeyListBox_SelectionChanged" Width="500" Height="100" Background="White" Foreground="Black" Margin="0,5"/>
+
+            <TextBlock FontWeight="Bold" FontSize="18" Text="🔒 Beschikbare Private Keys" Margin="0,20,0,0" />
+            <ListBox Name="PrivateKeyListBox" SelectionChanged="PrivateKeyListBox_SelectionChanged" Width="500" Height="100" Background="White" Foreground="Black" Margin="0,5"/>
+
+            <Separator Margin="0,20,0,20"/>
+
+            <!-- Ciphertext Folder instellen -->
+            <Button Content="📂 Stel standaard Ciphertext Folder in" Click="SetCiphertextFolder_Click" Width="300" Height="35" Margin="0,5"/>
+
+            <Separator Margin="0,20,0,20"/>
+
+            <!-- Encryptie Sectie -->
+            <TextBlock FontWeight="Bold" FontSize="18" Text="✨ Encryptie van AES sleutel" />
+            <Button Content="📂 Selecteer Plaintext AES Key" Click="SelectPlaintextAESKey_Click" Width="250" Height="35" Margin="0,5"/>
+            <Button Content="🔐 Encrypt AES Key" Click="EncryptAESKey_Click" Width="250" Height="35" Background="#2ECC71" Margin="0,5"/>
+
+            <Separator Margin="0,20,0,20"/>
+
+            <!-- Decryptie Sectie -->
+            <TextBlock FontWeight="Bold" FontSize="18" Text="🔓 Decryptie van AES sleutel" />
+            <Button Content="📂 Selecteer Ciphertext AES Key" Click="SelectCiphertextAESKey_Click" Width="250" Height="35" Margin="0,5"/>
+            <Button Content="🔓 Decrypt AES Key" Click="DecryptAESKey_Click" Width="250" Height="35" Background="#E74C3C" Margin="0,5"/>
+
+            <Separator Margin="0,20,0,20"/>
+
+            <!-- Ciphertext bestanden bekijken -->
+            <TextBlock FontWeight="Bold" FontSize="18" Text="📜 Beschikbare Ciphertext Bestanden" />
+            <ListBox Name="CiphertextListBox" Width="500" Height="150" Background="White" Foreground="Black" Margin="0,5"/>
+
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>
