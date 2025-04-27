@@ -17,3 +17,22 @@ C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\Encryptio
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\Encrypti.2055E9A8.Up2Date
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\EncryptionApp.exe
 C:\Users\11802975\OneDrive - PXL\PRO2\Security & Privacy\EncryptionApp\EncryptionApp\obj\Debug\EncryptionApp.pdb
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\EncryptionApp.exe.config
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\EncryptionApp.exe
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\EncryptionApp.pdb
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.csproj.AssemblyReference.cache
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\MainWindow.baml
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\MainWindow.g.cs
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\App.g.cs
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp_MarkupCompile.cache
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.g.resources
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.Properties.Resources.resources
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.csproj.GenerateResource.cache
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.csproj.CoreCompileInputs.cache
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\Encrypti.2055E9A8.Up2Date
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.exe
+C:\Users\12300236\Source\Repos\EncyrptionTool\EncryptionApp\obj\Debug\EncryptionApp.pdb
